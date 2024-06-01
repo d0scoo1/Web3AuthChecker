@@ -1,0 +1,322 @@
+{
+    "info": {
+        "name": "opensea",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": "",
+        "_postman_id": "8f99d53e-ab13-4b6c-9194-ae2d4f9ca6f9",
+        "url":"opensea.io"
+    },
+    "item": [
+        {
+            "request": {
+                "auth": {
+                    "type": "noauth"
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}"
+                },
+                "header": [
+                    {
+                        "key": "x-build-id",
+                        "value": "040afb04751681567a9fb2831b416a56a280139d",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-signed-query",
+                        "value": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-viewer-address",
+                        "value": "$$ addr $$",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept",
+                        "value": "*/*",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept-language",
+                        "value": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "origin",
+                        "value": "https://opensea.io",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "referer",
+                        "value": "https://opensea.io/",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua",
+                        "value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-mobile",
+                        "value": "?0",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-platform",
+                        "value": "\"Windows\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-app-id",
+                        "value": "opensea-web",
+                        "description": "",
+                        "disabled": false
+                    }
+                ],
+                "description": "",
+                "url": {
+                    "raw": "https://opensea.io/__api/graphql/",
+                    "protocol": "https",
+                    "host": [
+                        "opensea",
+                        "io"
+                    ],
+                    "path": [
+                        "__api",
+                        "graphql",
+                        ""
+                    ]
+                },
+                "method": "POST"
+            },
+            "name": "msg_query"
+        },
+        {
+            "request": {
+                "auth": {
+                    "type": "noauth"
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}"
+                },
+                "header": [
+                    {
+                        "key": "x-build-id",
+                        "value": "040afb04751681567a9fb2831b416a56a280139d",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-signed-query",
+                        "value": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-viewer-address",
+                        "value": "$$ addr $$",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept",
+                        "value": "*/*",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept-language",
+                        "value": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "origin",
+                        "value": "https://opensea.io",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "referer",
+                        "value": "https://opensea.io/",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua",
+                        "value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-mobile",
+                        "value": "?0",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-platform",
+                        "value": "\"Windows\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-app-id",
+                        "value": "opensea-web",
+                        "description": "",
+                        "disabled": false
+                    }
+                ],
+                "description": "",
+                "url": {
+                    "raw": "https://opensea.io/__api/graphql/",
+                    "protocol": "https",
+                    "host": [
+                        "opensea",
+                        "io"
+                    ],
+                    "path": [
+                        "__api",
+                        "graphql",
+                        ""
+                    ]
+                },
+                "method": "POST"
+            },
+            "name": "auth"
+           
+        },
+        {
+            "request": {
+                "auth": {
+                    "type": "noauth"
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"id\":\"NotificationSettingsMutation\",\"query\":\"mutation NotificationSettingsMutation(\\n  $input: UserModifyMutationInput!\\n) {\\n  users {\\n    modify(input: $input) {\\n      relayId\\n      id\\n    }\\n  }\\n}\\n\",\"variables\":{\"input\":{\"bidReceivedEmailsPriceThreshold\":\"5000000000000000\",\"receiveAuctionExpirationEmails\":true,\"receiveBidItemPriceChangeEmails\":true,\"receiveBidReceivedEmails\":true,\"receiveItemSoldEmails\":false,\"receiveNewsletter\":true,\"receiveOutbidEmails\":true,\"receiveOwnedAssetUpdateEmails\":true,\"receivePurchaseEmails\":true,\"receiveReferralEmails\":true}}}"
+                },
+                "header": [
+                    {
+                        "key": "sec-ch-ua",
+                        "value": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-mobile",
+                        "value": "?0",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "sec-ch-ua-platform",
+                        "value": "\"Windows\"",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-app-id",
+                        "value": "opensea-web",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-build-id",
+                        "value": "040afb04751681567a9fb2831b416a56a280139d",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-signed-query",
+                        "value": "6e80da18e3a6196e44d0fd4588ed1710595a19778af3fff25324f32e3c72c865",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "x-viewer-address",
+                        "value": "$$ addr $$",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept",
+                        "value": "*/*",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "accept-language",
+                        "value": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "authorization",
+                        "value": "JWT $$ token $$",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "content-type",
+                        "value": "application/json",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "origin",
+                        "value": "https://opensea.io",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "key": "referer",
+                        "value": "https://opensea.io/",
+                        "description": "",
+                        "disabled": false
+                    }
+                ],
+                
+                "description": "",
+                "url": {
+                    "raw": "https://opensea.io/__api/graphql/",
+                    "protocol": "https",
+                    "host": [
+                        "opensea",
+                        "io"
+                    ],
+                    "path": [
+                        "__api",
+                        "graphql",
+                        ""
+                    ]
+                },
+                "method": "POST"
+            },
+            "name": "settings"
+        }
+    ]
+}

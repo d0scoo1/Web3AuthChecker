@@ -1,0 +1,1941 @@
+{
+    "detector": "msg_sig_security",
+    "description": "Check msg signature security",
+    "passed": true,
+    "request_failed": [
+        "auth",
+        "auth",
+        "auth",
+        "auth",
+        "auth"
+    ],
+    "results": {
+        "URL_NOT_IN_MSG": false,
+        "NAME_NOT_IN_MSG": false,
+        "NONCE_NOT_IN_MSG": false,
+        "NOT_CHECK_MSG": false,
+        "NOT_CHECK_MSG_BODY": false,
+        "NOT_CHECK_NONCE": false,
+        "NOT_CHECK_SIG": false,
+        "SIG_CAN_REPLAY": false,
+        "SIG_FIRST_APPEAR": "auth",
+        "MSG1": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+        "MSG2": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+        "NONCE_1": "\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+        "NONCE_2": "\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+        "MSG_BODY_1": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+        "MSG_BODY_2": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+        "SIG_1": "0xf8d0f129c00448db4ea5b0d9728542cbd9a2b4327a7854aa08a6763eefa502277c69317305f6197f7442fd31b76737b1ddc1f6baddf4fcefb3e890faa57398d31c",
+        "SIG_2": "0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c",
+        "INFO": {
+            "NOT_CHECK_MSG": {
+                "MSG": "fake_msg",
+                "SIG": "0x9851b6518a10a5c202212a64a335143b7281502c36998f06d5fe2d17e1e5f0cd00abad477dfc780718ee1ab5b11523cf796e1ea5704f965a8ff3972a91fcafc31b"
+            },
+            "NOT_CHECK_MSG_BODY": {
+                "MSG": "fake_bodyNonce:\n78e646fc-54ab-4891-b265-4377902e278d",
+                "SIG": "0x340871f4a1fe6bbe1c1fbdf7f656848c60da0ebc75a07af90f8844edb8cdcdff051a6f0cef5a7d9558cf300d62ae457151ba7b840e344b932e2e5fb612a017da1b"
+            },
+            "NOT_CHECK_NONCE": {
+                "MSG": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:fake_nonce",
+                "SIG": "0xf50b7c1b4503904584af9a15f6ae06c1a3d94af6bf40dda5d8e16fa17328e33c2d51c2c53e33a0ddf735089f43f3f0284754db0b6073d1eab772fb6b708d80bc1b"
+            },
+            "NOT_CHECK_SIG": {
+                "MSG": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n93199c0e-8d31-4be9-a7c4-0da4938e482b",
+                "SIG": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c"
+            }
+        }
+    },
+    "after_request_history": [
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n7a448892-dfe3-4d09-a0a7-2eae31dade31\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "kBZDgaF9GkvqOlalDO3fnZnTOVOrNeZbNTXHM4CpUuQ-1714849078-1.0.1.1-adKC8sn1_FAz7Ynv3M56AGKQP68GBLlz0Utc2COxdGmGdzqZ21qa.zcpm6j4j3r5OPeD9uA34_3RxdBTDRHcSQ",
+                        "_cfuvid": "9bx6xaweIY..AEII6TAgagmWpfG4hQaJtD0zSbEpwYE-1714849078195-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.101321,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849075",
+                "timestamp13": "1714849075814",
+                "ftime_ia": "2024-05-04T18:57:55.000Z",
+                "ftime_et": "2024-05-05T18:57:55.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n7a448892-dfe3-4d09-a0a7-2eae31dade31\",\"signature\":\"0xf8d0f129c00448db4ea5b0d9728542cbd9a2b4327a7854aa08a6763eefa502277c69317305f6197f7442fd31b76737b1ddc1f6baddf4fcefb3e890faa57398d31c\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"login\":{\"token\":\"eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NDc4LCAib3JpZ0lhdCI6IDE3MTQ4NDkwNzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.ozx_8_AG2d3IjOqMaD6XgVYTxA1LTjj8onxdv_2E90eISoaT4Wt3yjpKeEm0cp8REiHaiOL56XrzL3lXbR6h0fTobQ5d8O5ILe9-KbY5VCL_eOJsuLSbzXi3OzT-VWRKDDwWcYyTZ2V_VgJuPDvuO0pb-B2_TNrhwT79duuR-zX4InB0mCqjunourYYqeAKTbK0tJSxHvsF5Sw5TQJ4dS2VsTP5qg21ga8PcbXIona-pVpiouRJUYO2ArcMSGOf48lp-LToVBG_a4iG7w4u-9GQA533mNvJgiGbzRjJ5fU16Asee5rwYOagAFH_UWJ5EuQcVCQsCbxtexi-L4wkB7A==\",\"account\":{\"address\":\"0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\",\"moonpayKycStatus\":\"NONE\",\"moonpayKycRejectType\":\"NONE\",\"isEmployee\":false,\"id\":\"QWNjb3VudFR5cGU6MjA2MDIwNDUyNQ==\"}}}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "kBZDgaF9GkvqOlalDO3fnZnTOVOrNeZbNTXHM4CpUuQ-1714849078-1.0.1.1-adKC8sn1_FAz7Ynv3M56AGKQP68GBLlz0Utc2COxdGmGdzqZ21qa.zcpm6j4j3r5OPeD9uA34_3RxdBTDRHcSQ",
+                        "_cfuvid": "9bx6xaweIY..AEII6TAgagmWpfG4hQaJtD0zSbEpwYE-1714849078195-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.11634,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849075",
+                "timestamp13": "1714849075814",
+                "ftime_ia": "2024-05-04T18:57:55.000Z",
+                "ftime_et": "2024-05-05T18:57:55.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "sig": "0xf8d0f129c00448db4ea5b0d9728542cbd9a2b4327a7854aa08a6763eefa502277c69317305f6197f7442fd31b76737b1ddc1f6baddf4fcefb3e890faa57398d31c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NDc4LCAib3JpZ0lhdCI6IDE3MTQ4NDkwNzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.ozx_8_AG2d3IjOqMaD6XgVYTxA1LTjj8onxdv_2E90eISoaT4Wt3yjpKeEm0cp8REiHaiOL56XrzL3lXbR6h0fTobQ5d8O5ILe9-KbY5VCL_eOJsuLSbzXi3OzT-VWRKDDwWcYyTZ2V_VgJuPDvuO0pb-B2_TNrhwT79duuR-zX4InB0mCqjunourYYqeAKTbK0tJSxHvsF5Sw5TQJ4dS2VsTP5qg21ga8PcbXIona-pVpiouRJUYO2ArcMSGOf48lp-LToVBG_a4iG7w4u-9GQA533mNvJgiGbzRjJ5fU16Asee5rwYOagAFH_UWJ5EuQcVCQsCbxtexi-L4wkB7A=="
+            }
+        },
+        {
+            "name": "settings",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "check_point_1": [
+                        "data",
+                        "users",
+                        "modify"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web",
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "6e80da18e3a6196e44d0fd4588ed1710595a19778af3fff25324f32e3c72c865",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "authorization": "JWT eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NDc4LCAib3JpZ0lhdCI6IDE3MTQ4NDkwNzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.ozx_8_AG2d3IjOqMaD6XgVYTxA1LTjj8onxdv_2E90eISoaT4Wt3yjpKeEm0cp8REiHaiOL56XrzL3lXbR6h0fTobQ5d8O5ILe9-KbY5VCL_eOJsuLSbzXi3OzT-VWRKDDwWcYyTZ2V_VgJuPDvuO0pb-B2_TNrhwT79duuR-zX4InB0mCqjunourYYqeAKTbK0tJSxHvsF5Sw5TQJ4dS2VsTP5qg21ga8PcbXIona-pVpiouRJUYO2ArcMSGOf48lp-LToVBG_a4iG7w4u-9GQA533mNvJgiGbzRjJ5fU16Asee5rwYOagAFH_UWJ5EuQcVCQsCbxtexi-L4wkB7A==",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/"
+                },
+                "params": {},
+                "data": "{\"id\":\"NotificationSettingsMutation\",\"query\":\"mutation NotificationSettingsMutation(\\n  $input: UserModifyMutationInput!\\n) {\\n  users {\\n    modify(input: $input) {\\n      relayId\\n      id\\n    }\\n  }\\n}\\n\",\"variables\":{\"input\":{\"bidReceivedEmailsPriceThreshold\":\"5000000000000000\",\"receiveAuctionExpirationEmails\":true,\"receiveBidItemPriceChangeEmails\":true,\"receiveBidReceivedEmails\":true,\"receiveItemSoldEmails\":false,\"receiveNewsletter\":true,\"receiveOutbidEmails\":true,\"receiveOwnedAssetUpdateEmails\":true,\"receivePurchaseEmails\":true,\"receiveReferralEmails\":true}}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"users\":{\"modify\":{\"relayId\":\"VXNlclR5cGU6NDAxMjExNTM=\",\"id\":\"VXNlclR5cGU6NDAxMjExNTM=\"}}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "kBZDgaF9GkvqOlalDO3fnZnTOVOrNeZbNTXHM4CpUuQ-1714849078-1.0.1.1-adKC8sn1_FAz7Ynv3M56AGKQP68GBLlz0Utc2COxdGmGdzqZ21qa.zcpm6j4j3r5OPeD9uA34_3RxdBTDRHcSQ",
+                        "_cfuvid": "9bx6xaweIY..AEII6TAgagmWpfG4hQaJtD0zSbEpwYE-1714849078195-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.17619,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849075",
+                "timestamp13": "1714849075814",
+                "ftime_ia": "2024-05-04T18:57:55.000Z",
+                "ftime_et": "2024-05-05T18:57:55.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n7a448892-dfe3-4d09-a0a7-2eae31dade31",
+                "sig": "0xf8d0f129c00448db4ea5b0d9728542cbd9a2b4327a7854aa08a6763eefa502277c69317305f6197f7442fd31b76737b1ddc1f6baddf4fcefb3e890faa57398d31c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NDc4LCAib3JpZ0lhdCI6IDE3MTQ4NDkwNzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.ozx_8_AG2d3IjOqMaD6XgVYTxA1LTjj8onxdv_2E90eISoaT4Wt3yjpKeEm0cp8REiHaiOL56XrzL3lXbR6h0fTobQ5d8O5ILe9-KbY5VCL_eOJsuLSbzXi3OzT-VWRKDDwWcYyTZ2V_VgJuPDvuO0pb-B2_TNrhwT79duuR-zX4InB0mCqjunourYYqeAKTbK0tJSxHvsF5Sw5TQJ4dS2VsTP5qg21ga8PcbXIona-pVpiouRJUYO2ArcMSGOf48lp-LToVBG_a4iG7w4u-9GQA533mNvJgiGbzRjJ5fU16Asee5rwYOagAFH_UWJ5EuQcVCQsCbxtexi-L4wkB7A==",
+                "check_point_1": {
+                    "relayId": "VXNlclR5cGU6NDAxMjExNTM=",
+                    "id": "VXNlclR5cGU6NDAxMjExNTM="
+                }
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\naabdc6c8-74fc-4981-ae68-1c4bffcead5e\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "dtvcvYP8Og10dgAayxQSlxeVD73.J5sHEgeQVq49MXY-1714849138-1.0.1.1-3geWlWZwaLz3z_iGU6n1fpDpVigoxIlWgHyxOwWAv1.aMgxTAW3pNADTDsuvBiJXxm8YFhZ5aXnYBqhHoXTOLg",
+                        "_cfuvid": "QLeBiDlFl_LAh6Eu1szljSkObnImSrqpfjyhNByGhzE-1714849138625-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.108827,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849136",
+                "timestamp13": "1714849136234",
+                "ftime_ia": "2024-05-04T18:58:56.000Z",
+                "ftime_et": "2024-05-05T18:58:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\naabdc6c8-74fc-4981-ae68-1c4bffcead5e\",\"signature\":\"0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"login\":{\"token\":\"eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg==\",\"account\":{\"address\":\"0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\",\"moonpayKycStatus\":\"NONE\",\"moonpayKycRejectType\":\"NONE\",\"isEmployee\":false,\"id\":\"QWNjb3VudFR5cGU6MjA2MDIwNDUyNQ==\"}}}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "dtvcvYP8Og10dgAayxQSlxeVD73.J5sHEgeQVq49MXY-1714849138-1.0.1.1-3geWlWZwaLz3z_iGU6n1fpDpVigoxIlWgHyxOwWAv1.aMgxTAW3pNADTDsuvBiJXxm8YFhZ5aXnYBqhHoXTOLg",
+                        "_cfuvid": "QLeBiDlFl_LAh6Eu1szljSkObnImSrqpfjyhNByGhzE-1714849138625-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.112603,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849136",
+                "timestamp13": "1714849136234",
+                "ftime_ia": "2024-05-04T18:58:56.000Z",
+                "ftime_et": "2024-05-05T18:58:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "sig": "0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg=="
+            }
+        },
+        {
+            "name": "settings",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "check_point_1": [
+                        "data",
+                        "users",
+                        "modify"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web",
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "6e80da18e3a6196e44d0fd4588ed1710595a19778af3fff25324f32e3c72c865",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "authorization": "JWT eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg==",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/"
+                },
+                "params": {},
+                "data": "{\"id\":\"NotificationSettingsMutation\",\"query\":\"mutation NotificationSettingsMutation(\\n  $input: UserModifyMutationInput!\\n) {\\n  users {\\n    modify(input: $input) {\\n      relayId\\n      id\\n    }\\n  }\\n}\\n\",\"variables\":{\"input\":{\"bidReceivedEmailsPriceThreshold\":\"5000000000000000\",\"receiveAuctionExpirationEmails\":true,\"receiveBidItemPriceChangeEmails\":true,\"receiveBidReceivedEmails\":true,\"receiveItemSoldEmails\":false,\"receiveNewsletter\":true,\"receiveOutbidEmails\":true,\"receiveOwnedAssetUpdateEmails\":true,\"receivePurchaseEmails\":true,\"receiveReferralEmails\":true}}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"users\":{\"modify\":{\"relayId\":\"VXNlclR5cGU6NDAxMjExNTM=\",\"id\":\"VXNlclR5cGU6NDAxMjExNTM=\"}}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "dtvcvYP8Og10dgAayxQSlxeVD73.J5sHEgeQVq49MXY-1714849138-1.0.1.1-3geWlWZwaLz3z_iGU6n1fpDpVigoxIlWgHyxOwWAv1.aMgxTAW3pNADTDsuvBiJXxm8YFhZ5aXnYBqhHoXTOLg",
+                        "_cfuvid": "QLeBiDlFl_LAh6Eu1szljSkObnImSrqpfjyhNByGhzE-1714849138625-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.127444,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849136",
+                "timestamp13": "1714849136234",
+                "ftime_ia": "2024-05-04T18:58:56.000Z",
+                "ftime_et": "2024-05-05T18:58:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "sig": "0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg==",
+                "check_point_1": {
+                    "relayId": "VXNlclR5cGU6NDAxMjExNTM=",
+                    "id": "VXNlclR5cGU6NDAxMjExNTM="
+                }
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\naabdc6c8-74fc-4981-ae68-1c4bffcead5e\",\"signature\":\"0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":null,\"errors\":[{\"message\":\"[401] Not authorized.\",\"locations\":[{\"line\":1,\"column\":119}],\"path\":[\"auth\",\"login\"]}]}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "dtvcvYP8Og10dgAayxQSlxeVD73.J5sHEgeQVq49MXY-1714849138-1.0.1.1-3geWlWZwaLz3z_iGU6n1fpDpVigoxIlWgHyxOwWAv1.aMgxTAW3pNADTDsuvBiJXxm8YFhZ5aXnYBqhHoXTOLg",
+                        "_cfuvid": "QLeBiDlFl_LAh6Eu1szljSkObnImSrqpfjyhNByGhzE-1714849138625-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.06997,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": false,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849136",
+                "timestamp13": "1714849136234",
+                "ftime_ia": "2024-05-04T18:58:56.000Z",
+                "ftime_et": "2024-05-05T18:58:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "sig": "0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg==",
+                "check_point_1": {
+                    "relayId": "VXNlclR5cGU6NDAxMjExNTM=",
+                    "id": "VXNlclR5cGU6NDAxMjExNTM="
+                }
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n03b27e2e-f4e1-4718-8c40-841c0930a52e\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "LD.lLZRt2V7CqIVEluF7PjSU2HaJsmH2Yw6QT_gvdJw-1714849199-1.0.1.1-i9T8sGSDr8kOIG.Fn5xsHKZ.ZIl2lVTGvBCBJDtUSLn1tHpiSjE7UDFy0D2chxa.5VxOQef6MpGNx8AwwDmEbw",
+                        "_cfuvid": "SbJggM8eSIF36qBWVTQGpE45OXToQU.EfS55LHonopU-1714849199100-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.127897,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {
+                "msg": "fake_msg"
+            },
+            "session_context": {
+                "timestamp10": "1714849196",
+                "timestamp13": "1714849196690",
+                "ftime_ia": "2024-05-04T18:59:56.000Z",
+                "ftime_et": "2024-05-05T18:59:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg": "fake_msg",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n03b27e2e-f4e1-4718-8c40-841c0930a52e"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"fake_msg\",\"signature\":\"0x9851b6518a10a5c202212a64a335143b7281502c36998f06d5fe2d17e1e5f0cd00abad477dfc780718ee1ab5b11523cf796e1ea5704f965a8ff3972a91fcafc31b\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":null,\"errors\":[{\"message\":\"[401] Not authorized.\",\"locations\":[{\"line\":1,\"column\":119}],\"path\":[\"auth\",\"login\"]}]}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "LD.lLZRt2V7CqIVEluF7PjSU2HaJsmH2Yw6QT_gvdJw-1714849199-1.0.1.1-i9T8sGSDr8kOIG.Fn5xsHKZ.ZIl2lVTGvBCBJDtUSLn1tHpiSjE7UDFy0D2chxa.5VxOQef6MpGNx8AwwDmEbw",
+                        "_cfuvid": "SbJggM8eSIF36qBWVTQGpE45OXToQU.EfS55LHonopU-1714849199100-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.087759,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": false,
+            "local_context": {
+                "msg": "fake_msg"
+            },
+            "session_context": {
+                "timestamp10": "1714849196",
+                "timestamp13": "1714849196690",
+                "ftime_ia": "2024-05-04T18:59:56.000Z",
+                "ftime_et": "2024-05-05T18:59:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg": "fake_msg",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n03b27e2e-f4e1-4718-8c40-841c0930a52e",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\n03b27e2e-f4e1-4718-8c40-841c0930a52e",
+                "sig": "0x9851b6518a10a5c202212a64a335143b7281502c36998f06d5fe2d17e1e5f0cd00abad477dfc780718ee1ab5b11523cf796e1ea5704f965a8ff3972a91fcafc31b"
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n78e646fc-54ab-4891-b265-4377902e278d\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "ENCDE8pHdAZA4bQ_xtUkDo8fH7nbGHntandZYqzJXUo-1714849259-1.0.1.1-A4o7j_nFADaRGz3mE0alLesaTUMetnU19mNe4vSNWnco6sbPMCdhCgxOAguImraRlJey1x0JR7EGDN00pZCNYw",
+                        "_cfuvid": "pGCeHDeHYl6BlsNbGh4ZpbEdGgUZ0cqZFrj6qI98a88-1714849259295-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.091291,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {
+                "msg_body": "fake_body"
+            },
+            "session_context": {
+                "timestamp10": "1714849256",
+                "timestamp13": "1714849256921",
+                "ftime_ia": "2024-05-04T19:00:56.000Z",
+                "ftime_et": "2024-05-05T19:00:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_body": "fake_body",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n78e646fc-54ab-4891-b265-4377902e278d"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"fake_bodyNonce:\\n78e646fc-54ab-4891-b265-4377902e278d\",\"signature\":\"0x340871f4a1fe6bbe1c1fbdf7f656848c60da0ebc75a07af90f8844edb8cdcdff051a6f0cef5a7d9558cf300d62ae457151ba7b840e344b932e2e5fb612a017da1b\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":null,\"errors\":[{\"message\":\"[401] Not authorized.\",\"locations\":[{\"line\":1,\"column\":119}],\"path\":[\"auth\",\"login\"]}]}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "ENCDE8pHdAZA4bQ_xtUkDo8fH7nbGHntandZYqzJXUo-1714849259-1.0.1.1-A4o7j_nFADaRGz3mE0alLesaTUMetnU19mNe4vSNWnco6sbPMCdhCgxOAguImraRlJey1x0JR7EGDN00pZCNYw",
+                        "_cfuvid": "pGCeHDeHYl6BlsNbGh4ZpbEdGgUZ0cqZFrj6qI98a88-1714849259295-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.077605,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": false,
+            "local_context": {
+                "msg_body": "fake_body"
+            },
+            "session_context": {
+                "timestamp10": "1714849256",
+                "timestamp13": "1714849256921",
+                "ftime_ia": "2024-05-04T19:00:56.000Z",
+                "ftime_et": "2024-05-05T19:00:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_body": "fake_body",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n78e646fc-54ab-4891-b265-4377902e278d",
+                "nonce": "\n78e646fc-54ab-4891-b265-4377902e278d",
+                "msg": "fake_bodyNonce:\n78e646fc-54ab-4891-b265-4377902e278d",
+                "sig": "0x340871f4a1fe6bbe1c1fbdf7f656848c60da0ebc75a07af90f8844edb8cdcdff051a6f0cef5a7d9558cf300d62ae457151ba7b840e344b932e2e5fb612a017da1b"
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\na90b8d64-7492-4c62-849c-1d43b977819f\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "8SQMLbBPhMGwmWoOjIfSWbFnvJ2tHR4lkAtWuZSC6Vg-1714849319-1.0.1.1-1NMtMdC1m2J15gv8P05ECJt4QgdjJifrptRKfad5A.iGPaKsze4CgFkHaYsyLk3BHtMDgOgT4n3qr.m82ASGqw",
+                        "_cfuvid": "5l7K.hPoz73ARIoSHfWOG2kEBfTfOTZkd2uVxU_epfU-1714849319483-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.091945,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {
+                "nonce": "fake_nonce"
+            },
+            "session_context": {
+                "timestamp10": "1714849317",
+                "timestamp13": "1714849317106",
+                "ftime_ia": "2024-05-04T19:01:57.000Z",
+                "ftime_et": "2024-05-05T19:01:57.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "nonce": "fake_nonce",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\na90b8d64-7492-4c62-849c-1d43b977819f"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:fake_nonce\",\"signature\":\"0xf50b7c1b4503904584af9a15f6ae06c1a3d94af6bf40dda5d8e16fa17328e33c2d51c2c53e33a0ddf735089f43f3f0284754db0b6073d1eab772fb6b708d80bc1b\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":null,\"errors\":[{\"message\":\"[401] Not authorized.\",\"locations\":[{\"line\":1,\"column\":119}],\"path\":[\"auth\",\"login\"]}]}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "8SQMLbBPhMGwmWoOjIfSWbFnvJ2tHR4lkAtWuZSC6Vg-1714849319-1.0.1.1-1NMtMdC1m2J15gv8P05ECJt4QgdjJifrptRKfad5A.iGPaKsze4CgFkHaYsyLk3BHtMDgOgT4n3qr.m82ASGqw",
+                        "_cfuvid": "5l7K.hPoz73ARIoSHfWOG2kEBfTfOTZkd2uVxU_epfU-1714849319483-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.060704,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": false,
+            "local_context": {
+                "nonce": "fake_nonce"
+            },
+            "session_context": {
+                "timestamp10": "1714849317",
+                "timestamp13": "1714849317106",
+                "ftime_ia": "2024-05-04T19:01:57.000Z",
+                "ftime_et": "2024-05-05T19:01:57.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "nonce": "fake_nonce",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\na90b8d64-7492-4c62-849c-1d43b977819f",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:fake_nonce",
+                "sig": "0xf50b7c1b4503904584af9a15f6ae06c1a3d94af6bf40dda5d8e16fa17328e33c2d51c2c53e33a0ddf735089f43f3f0284754db0b6073d1eab772fb6b708d80bc1b"
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"loginMessage\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n93199c0e-8d31-4be9-a7c4-0da4938e482b\"}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "_QHxzKmF8K40nmbfQ9XbqBUmbocP05J2WifUFo2Vl6I-1714849379-1.0.1.1-zX1YkEK7nj3B1RHj0y_pja9oEPnqa5ihaY7Ay9MwODNFJcU2pdU90T8Rtnee76wOAE.Ou2qhirEw3RxjUd331A",
+                        "_cfuvid": "32tcCEuRfJQ8eshmxkeDsf_hK2tws6xIj7UzLorh.y0-1714849379679-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.112647,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c"
+            },
+            "session_context": {
+                "timestamp10": "1714849377",
+                "timestamp13": "1714849377282",
+                "ftime_ia": "2024-05-04T19:02:57.000Z",
+                "ftime_et": "2024-05-05T19:02:57.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n93199c0e-8d31-4be9-a7c4-0da4938e482b"
+            }
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\n93199c0e-8d31-4be9-a7c4-0da4938e482b\",\"signature\":\"0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":null,\"errors\":[{\"message\":\"[401] Not authorized.\",\"locations\":[{\"line\":1,\"column\":119}],\"path\":[\"auth\",\"login\"]}]}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "_QHxzKmF8K40nmbfQ9XbqBUmbocP05J2WifUFo2Vl6I-1714849379-1.0.1.1-zX1YkEK7nj3B1RHj0y_pja9oEPnqa5ihaY7Ay9MwODNFJcU2pdU90T8Rtnee76wOAE.Ou2qhirEw3RxjUd331A",
+                        "_cfuvid": "32tcCEuRfJQ8eshmxkeDsf_hK2tws6xIj7UzLorh.y0-1714849379679-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.186854,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": false,
+            "local_context": {
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c"
+            },
+            "session_context": {
+                "timestamp10": "1714849377",
+                "timestamp13": "1714849377282",
+                "ftime_ia": "2024-05-04T19:02:57.000Z",
+                "ftime_et": "2024-05-05T19:02:57.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n93199c0e-8d31-4be9-a7c4-0da4938e482b",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\n93199c0e-8d31-4be9-a7c4-0da4938e482b",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n93199c0e-8d31-4be9-a7c4-0da4938e482b"
+            }
+        }
+    ],
+    "before_request_history": [
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "settings",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "check_point_1": [
+                        "data",
+                        "users",
+                        "modify"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web",
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "6e80da18e3a6196e44d0fd4588ed1710595a19778af3fff25324f32e3c72c865",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "authorization": "JWT $$ token $$",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/"
+                },
+                "params": {},
+                "data": "{\"id\":\"NotificationSettingsMutation\",\"query\":\"mutation NotificationSettingsMutation(\\n  $input: UserModifyMutationInput!\\n) {\\n  users {\\n    modify(input: $input) {\\n      relayId\\n      id\\n    }\\n  }\\n}\\n\",\"variables\":{\"input\":{\"bidReceivedEmailsPriceThreshold\":\"5000000000000000\",\"receiveAuctionExpirationEmails\":true,\"receiveBidItemPriceChangeEmails\":true,\"receiveBidReceivedEmails\":true,\"receiveItemSoldEmails\":false,\"receiveNewsletter\":true,\"receiveOutbidEmails\":true,\"receiveOwnedAssetUpdateEmails\":true,\"receivePurchaseEmails\":true,\"receiveReferralEmails\":true}}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "settings",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "check_point_1": [
+                        "data",
+                        "users",
+                        "modify"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web",
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "6e80da18e3a6196e44d0fd4588ed1710595a19778af3fff25324f32e3c72c865",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "authorization": "JWT $$ token $$",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/"
+                },
+                "params": {},
+                "data": "{\"id\":\"NotificationSettingsMutation\",\"query\":\"mutation NotificationSettingsMutation(\\n  $input: UserModifyMutationInput!\\n) {\\n  users {\\n    modify(input: $input) {\\n      relayId\\n      id\\n    }\\n  }\\n}\\n\",\"variables\":{\"input\":{\"bidReceivedEmailsPriceThreshold\":\"5000000000000000\",\"receiveAuctionExpirationEmails\":true,\"receiveBidItemPriceChangeEmails\":true,\"receiveBidReceivedEmails\":true,\"receiveItemSoldEmails\":false,\"receiveNewsletter\":true,\"receiveOutbidEmails\":true,\"receiveOwnedAssetUpdateEmails\":true,\"receivePurchaseEmails\":true,\"receiveReferralEmails\":true}}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {},
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064\",\"message\":\"Welcome to OpenSea!\\n\\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\\n\\nThis request will not trigger a blockchain transaction or cost any gas fees.\\n\\nWallet address:\\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\\n\\nNonce:\\naabdc6c8-74fc-4981-ae68-1c4bffcead5e\",\"signature\":\"0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                {
+                    "url": "https://opensea.io/__api/graphql/",
+                    "content_text": "{\"data\":{\"auth\":{\"login\":{\"token\":\"eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg==\",\"account\":{\"address\":\"0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\",\"moonpayKycStatus\":\"NONE\",\"moonpayKycRejectType\":\"NONE\",\"isEmployee\":false,\"id\":\"QWNjb3VudFR5cGU6MjA2MDIwNDUyNQ==\"}}}}}",
+                    "status_code": 200,
+                    "reason": "",
+                    "ok": true,
+                    "cookies": {
+                        "__cf_bm": "dtvcvYP8Og10dgAayxQSlxeVD73.J5sHEgeQVq49MXY-1714849138-1.0.1.1-3geWlWZwaLz3z_iGU6n1fpDpVigoxIlWgHyxOwWAv1.aMgxTAW3pNADTDsuvBiJXxm8YFhZ5aXnYBqhHoXTOLg",
+                        "_cfuvid": "QLeBiDlFl_LAh6Eu1szljSkObnImSrqpfjyhNByGhzE-1714849138625-0.0.1.1-604800000"
+                    },
+                    "elapsed": 0.112603,
+                    "encoding": "utf-8",
+                    "charset": "utf-8",
+                    "redirect_count": 0,
+                    "redirect_url": ""
+                }
+            ],
+            "success": true,
+            "local_context": {},
+            "session_context": {
+                "timestamp10": "1714849136",
+                "timestamp13": "1714849136234",
+                "ftime_ia": "2024-05-04T18:58:56.000Z",
+                "ftime_et": "2024-05-05T18:58:56.000Z",
+                "private_key": "f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02",
+                "addr": "0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064",
+                "addr_low": "0x36e7c6feb20a90b07f63863d09cc12c4c9f39064",
+                "addr_up": "0x36E7C6FEB20A90B07F63863D09CC12C4C9F39064",
+                "msg_r": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg_body": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\n",
+                "nonce": "\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "msg": "Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service (https://opensea.io/tos) and Privacy Policy (https://opensea.io/privacy).\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\naabdc6c8-74fc-4981-ae68-1c4bffcead5e",
+                "sig": "0xe420766a116bcd82a8ea3fed98ce7dce392e93ca424d20518a4972f4d6bb4bb36462d7601180a7aeb18db3cb4d133a40efbe427d031e544666dcf35e64ed362e1c",
+                "token": "eyJhbGciOiAiUlMyNTYiLCAidHlwIjogIkpXVCIsICJraWQiOiAiYXJuOmF3czprbXM6dXMtZWFzdC0xOjI1NzExNjk3NTgxODprZXkvbXJrLTI4YWMxODQ3MTM1NTQ4NDQ4NTViNjY2Yjk4MzNkYjMxIn0=.eyJhZGRyZXNzIjogIjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsICJpc3MiOiAiT3BlblNlYSIsICJleHAiOiAxNzE0OTM1NTM4LCAib3JpZ0lhdCI6IDE3MTQ4NDkxMzgsICJhcGlBY2Nlc3MiOiAibm9uZSJ9.YL4trBSUKvKzlg-TGPx7MKvYs3Gq7z4SdjsW_igeTG48Hrq9gU4Xh85rVpArpVQYZ5kSIdjZnmJGKIUX-eVpyI-PoGRcEk7pVNVh8DRHPFe_2TZ1IItMG8qKRTggpw6xxRehNlML7QQv8xtBQAIHANMVvxrESRx8kVH7LTiBsj_rEHPXh2m-r5YvBcZdrLvcF6d_-Kf7tsR0ldN-iAUyr6MjSZCYBVQzOamAFvth593Go1YgaGpP9aDggxqg4pwCG9PQaQBR-XEK4dzEr0ow7L_mfx9U9oZvTPZB5GnZG0xs3WyggH3xtLZxNucmeL3JuU2SoCE35UF0psbUjJ2GQg=="
+            }
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "msg": "fake_msg"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "msg": "fake_msg"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "msg_body": "fake_body"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "msg_body": "fake_body"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "nonce": "fake_nonce"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "nonce": "fake_nonce"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "msg_query",
+            "perform": "request",
+            "input": {},
+            "output": {
+                "type": "json",
+                "path": {
+                    "msg_r": [
+                        "data",
+                        "auth",
+                        "loginMessage"
+                    ]
+                }
+            },
+            "sign": false,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "05649d324b3f3db988d5065ea33599bca390adf00e3f46952dd59ff5cc61e1e0",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"challengeLoginMessageQuery\",\"query\":\"query challengeLoginMessageQuery(\\n  $address: AddressScalar!\\n) {\\n  auth {\\n    loginMessage(address: $address)\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c"
+            },
+            "session_context": {}
+        },
+        {
+            "name": "auth",
+            "perform": "request",
+            "input": {
+                "msg_body": "$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce": "$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg": "$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output": {
+                "type": "json",
+                "path": {
+                    "token": [
+                        "data",
+                        "auth",
+                        "login",
+                        "token"
+                    ]
+                }
+            },
+            "sign": true,
+            "request_args": {
+                "method": "POST",
+                "url": "https://opensea.io/__api/graphql/",
+                "headers": {
+                    "x-build-id": "040afb04751681567a9fb2831b416a56a280139d",
+                    "x-signed-query": "804a717e08ab2f12de3752b428dd9b6fd5d006f26e9f17ec4f4805db69b66e96",
+                    "x-viewer-address": "$$ addr $$",
+                    "accept": "*/*",
+                    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5",
+                    "content-type": "application/json",
+                    "origin": "https://opensea.io",
+                    "referer": "https://opensea.io/",
+                    "sec-ch-ua": "\"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"108\", \"Microsoft Edge\";v=\"108\"",
+                    "sec-ch-ua-mobile": "?0",
+                    "sec-ch-ua-platform": "\"Windows\"",
+                    "x-app-id": "opensea-web"
+                },
+                "params": {},
+                "data": "{\"id\":\"authLoginMutation\",\"query\":\"mutation authLoginMutation(\\n  $address: AddressScalar!\\n  $message: String!\\n  $signature: String!\\n  $chain: ChainScalar\\n) {\\n  auth {\\n    login(address: $address, message: $message, signature: $signature, chain: $chain) {\\n      token\\n      account {\\n        address\\n        moonpayKycStatus\\n        moonpayKycRejectType\\n        isEmployee\\n        id\\n      }\\n    }\\n  }\\n}\\n\",\"variables\":{\"address\":\"$$ addr $$\",\"message\":\"$$ msg $$\",\"signature\":\"$$ sig $$\",\"chain\":\"ETHEREUM\"}}",
+                "timeout": 10,
+                "impersonate": "chrome110"
+            },
+            "response": [
+                null
+            ],
+            "success": null,
+            "local_context": {
+                "sig": "0x13d6babe50ad4056b7a768ed1dbe1b7a8fab35b3a598b324c202ccf3f7c5dbde78c633df080ffb17b7aea6bd0bc7901c280986c81fa406bd8d93faf5912d4d291c"
+            },
+            "session_context": {}
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+eth_account == 0.8.0
+curl_cffi == 0.3.7
+colorlog == 6.7.0
+tqdm == 4.62.3
+setuptools == 69.2.0

@@ -1,0 +1,15 @@
+//These accounts are only for login testing, never send cryptocurrency to them
+
+Phrase:
+fragile sound season that sock citizen jungle shrug song fall leave useless
+
+TEST_ACCOUNTS = [
+    {'private_key': 'f78411d5886f5ded63cd304b9b56dd87b05ce0922223e87b4927cc56bfaa7b02',
+    'addr': '0x36E7C6FeB20A90b07F63863D09cC12C4c9f39064'},
+    
+    {'private_key': '32dfebf1b058471b80abc5434ee7229a19c870b2c85797afdbf1fb21dccaf3cd',
+    'addr': '0x3BB5DdC2703B0C2a82952f25c521BE95dC9dee37'},
+    
+    {'private_key': '070175b068eeda71a5fab6dbd0bab9ee4ea3123729278f9ea7c192e408ac4385',
+    'addr': '0xeebaC884E95349DD24C6935B5c4E171Ed91c7f50'},
+]

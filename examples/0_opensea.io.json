@@ -1,0 +1,59 @@
+{
+    "schema": "1.0",
+    "name":"opensea",
+    "url":"opensea.io",
+    "postman_file_name":"0_opensea.postman_collection.json",
+    "auth_type":"JWT",
+    "items":{
+        "msg_query":{
+            "perform":"request",
+            "update_request_args":{ "impersonate": "chrome110"},
+            "input":{},
+            "output":{
+                "type":"json",
+                "path":{
+                    "msg_r":["data","auth","loginMessage"]
+                }
+            },
+            "response":{"data":{"auth":{"loginMessage":"Welcome to OpenSea!\n\nClick to sign in and accept the OpenSea Terms of Service: https://opensea.io/tos\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nYour authentication status will reset after 24 hours.\n\nWallet address:\n0x36e7c6feb20a90b07f63863d09cc12c4c9f39064\n\nNonce:\n3deca92b-9c8e-4bac-86cb-893345212441"}}}
+        },
+        "auth":{
+            "perform":"request",
+            "update_request_args":{ "impersonate": "chrome110"},
+            "sign_before_request":true,
+            "input":{
+                "msg_body":"$$ eval:context['msg_r'].split('Nonce:')[0] $$",
+                "nonce":"$$ eval:context['msg_r'].split('Nonce:')[1] $$",
+                "msg":"$$ eval:context['msg_body'] $$Nonce:$$ eval:context['nonce'] $$"
+            },
+            "output":{
+                "type":"json",
+                "path":{
+                    "token":["data","auth","login","token"]
+                }
+            },
+            "response":{"data":{"auth":{"login":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiVlhObGNsUjVjR1U2TkRBeE1qRXhOVE09IiwidXNlcm5hbWUiOiJfX09TX19FY21NbFVQeExic2ZkYmp0Q1RYOXJGU01jUUJLanFNYUdVeE5OZkQ5TVE1eUQzTThIM1FSbm5SOFFjenZVQlZzIiwiYWRkcmVzcyI6IjB4MzZlN2M2ZmViMjBhOTBiMDdmNjM4NjNkMDljYzEyYzRjOWYzOTA2NCIsImlzcyI6Ik9wZW5TZWEiLCJleHAiOjE2Nzk3NTI5OTAsIm9yaWdJYXQiOjE2Nzk2NjY1OTAsImFwaUFjY2VzcyI6Im5vbmUifQ.wgqOR-ZDcreJRygi2JCaN9Lq-ao3ABLvOq5f0TzxVP8","account":{"address":"0x36e7c6feb20a90b07f63863d09cc12c4c9f39064","moonpayKycStatus":"NONE","moonpayKycRejectType":"NONE","isEmployee":false,"id":"QWNjb3VudFR5cGU6MjA2MDIwNDUyNQ=="}}}}}
+        },
+        "settings":{
+            "perform":"request",
+            "update_request_args":{ "impersonate": "chrome110"},
+            "input":{},
+            "output":{
+                "type":"json",
+                "path":{
+                    "check_point_1":["data","users","modify"]
+                }
+            },
+            "response":{"data":{"users":{"modify":{"relayId":"VXNlclR5cGU6NDAxMjExNTM=","id":"VXNlclR5cGU6NDAxMjExNTM="}}}}
+        },
+        "logout":{
+            "perform":"skip",
+            "input":{},
+            "output":{},
+            "response":{}
+        }
+    },
+    "check_list":[
+       
+    ]
+}
